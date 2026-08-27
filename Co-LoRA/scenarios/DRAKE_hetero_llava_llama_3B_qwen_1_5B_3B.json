@@ -1,0 +1,264 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "Fashion200K",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "MagicBrush",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "VISION",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "FashionIQ",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_1.5B_vl"
+    },
+    {
+        "client_id": 1,
+        "datasets": [
+            {
+                "dataset": "VSR",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "VISION",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Fashion200K",
+                "subset_id": 2,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "NLVR2",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_1.5B_vl"
+    },
+    {
+        "client_id": 2,
+        "datasets": [
+            {
+                "dataset": "SEED-Bench-2",
+                "subset_id": 2,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Fashion200K",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "NLVR2",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "CIRR",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_1.5B_vl"
+    },
+    {
+        "client_id": 3,
+        "datasets": [
+            {
+                "dataset": "VizWiz",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "IRFL",
+                "subset_id": 2,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Bongard-HOI",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "MIT-States",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_3B_vl"
+    },
+    {
+        "client_id": 4,
+        "datasets": [
+            {
+                "dataset": "IRFL",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Bongard-OpenWorld",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "COMICS_Dialogue",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "IRFL",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_1.5B_vl"
+    },
+    {
+        "client_id": 5,
+        "datasets": [
+            {
+                "dataset": "Bongard-HOI",
+                "subset_id": 2,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Bongard-OpenWorld",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "IRFL",
+                "subset_id": 3,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Bongard-HOI",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_3B_vl"
+    },
+    {
+        "client_id": 6,
+        "datasets": [
+            {
+                "dataset": "WCVQA",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "iconqa",
+                "subset_id": 2,
+                "type": "open-ended",
+                "metric": "F1"
+            },
+            {
+                "dataset": "Co-Instruct-DB",
+                "subset_id": 2,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "SEED-Bench-2",
+                "subset_id": 1,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 7,
+        "datasets": [
+            {
+                "dataset": "TQA",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "WCVQA",
+                "subset_id": 3,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "iconqa",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Co-Instruct-DB",
+                "subset_id": 1,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/qwen2.5_3B_vl"
+    },
+    {
+        "client_id": 8,
+        "datasets": [
+            {
+                "dataset": "Co-Instruct-DB",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "dvqa",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "WCVQA",
+                "subset_id": 1,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "iconqa",
+                "subset_id": 3,
+                "type": "open-ended",
+                "metric": "F1"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 9,
+        "datasets": [
+            {
+                "dataset": "iconqa",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "Co-Instruct-DB",
+                "subset_id": 3,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "SEED-Bench-2",
+                "subset_id": 0,
+                "type": "multi-choice"
+            },
+            {
+                "dataset": "WCVQA",
+                "subset_id": 2,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    }
+]

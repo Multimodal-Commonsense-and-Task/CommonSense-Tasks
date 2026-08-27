@@ -1,0 +1,30 @@
+seed: 123
+method: lwe
+temperature: 0.0
+run_swap: true
+
+prompts:
+  initial_meta_prompt: null
+
+lwe:
+  restrict_length: true
+  max_meta_prompt_length: 10000
+
+model:
+  model_type: gemini
+  model_name: gemini-2.5-pro
+  max_try: 10
+
+dataset:
+  name: mmrewardbench
+  data_path: data/mmrewardbench/mmrewardbench_test.jsonl
+  image_prefix: ""
+  order_ids_path: null
+  strict_order: true
+  data_start_idx: null
+  data_end_idx: null
+  swap: false
+  shuffle: false
+  batch_size: 4
+
+out_dir: runs

@@ -1,0 +1,29 @@
+# Sample-specific prompt (static meta-prompt): same INITIAL_META_PROMPT_VANILLA for every sample,
+# but a fresh rubric is generated per instance (see `methods/ssp.py`).
+
+seed: 123
+method: ssp
+temperature: 0.0
+run_swap: true
+
+prompts:
+  initial_meta_prompt: null
+
+model:
+  model_type: gpt
+  model_name: gpt-4.1-2025-04-14
+  max_try: 10
+
+dataset:
+  name: mmrewardbench
+  data_path: data/mmrewardbench/mmrewardbench_test.jsonl
+  image_prefix: ""
+  order_ids_path: null
+  strict_order: false
+  data_start_idx: null
+  data_end_idx: 12
+  swap: false
+  shuffle: true
+  batch_size: 4
+
+out_dir: runs

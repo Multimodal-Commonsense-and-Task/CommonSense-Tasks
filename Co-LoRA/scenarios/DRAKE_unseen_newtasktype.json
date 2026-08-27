@@ -1,0 +1,46 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "RecipeQA_ImageCoherence",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 1,
+        "datasets": [
+            {
+                "dataset": "RecipeQA_VisualCloze",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 2,
+        "datasets": [
+            {
+                "dataset": "Mantis_contrastive_caption",
+                "subset_id": 1,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 3,
+        "datasets": [
+            {
+                "dataset": "HQ_Edit",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    }
+]

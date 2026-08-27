@@ -1,0 +1,94 @@
+# Large datasets and generated artifacts omitted from paper-code snapshots.
+/Budgeted-CL/budgeted_CL_CIL/collections/
+/Budgeted-CL/budgeted_CL_LLAVA/collections/
+/Budgeted-CL/budgeted_CL_LLAVA/$SCRATCH/
+/FLARE/MMP_results/
+/ISR-DPO/llava/serve/examples/*.mp4
+/FALCON/results/
+
+# Python bytecode and interpreter caches.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python packaging and compiled extensions.
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+*.so
+*.pyd
+*.dll
+*.dylib
+*.o
+*.obj
+
+# Virtual environments and local environment variables.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.venv/
+venv/
+/env/
+/ENV/
+
+# Test, type-checker, linter, and coverage caches.
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Jupyter temporary state.
+.ipynb_checkpoints/
+
+# Experiment trackers, generated runs, and model checkpoints.
+wandb/
+runs/
+outputs/
+checkpoints/
+lightning_logs/
+tensorboard/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+
+# Logs, temporary files, and editor swap files.
+*.log
+*.out
+*.err
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE and operating-system metadata.
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Common dependency directories.
+node_modules/

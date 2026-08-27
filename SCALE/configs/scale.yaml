@@ -1,0 +1,20 @@
+# =============================================================================
+# SCALE default hyperparameters for the OpenVLA backbone.
+#
+# These are the values used in the paper. They were tuned
+# on LIBERO-Long and applied unchanged to every other benchmark.
+# Any value here can be overridden from the command line, e.g.
+#   python experiments/robot/libero/run_libero_eval.py --decoding_mode scale --T0 1.0
+# =============================================================================
+
+# --- Adaptive Action Decoding (Sec. 3.3.1) ---
+T0: 1.0            # base / max sampling temperature; tau_k = T0 * sigmoid(u_k)        (Eq. 4)
+epsilon: 1.0e-12   # smoothing of the one-hot low-uncertainty reference q_low          (Appendix A / L)
+num_logits: 256    # number of top action logits used to compute self-uncertainty u
+                   #   (256 = the full OpenVLA action-token vocabulary => exact paper formulation)
+
+# --- Adaptive Visual Attention (Sec. 3.3.2) ---
+kappa: 2.0             # attention-temperature bound; gamma = kappa^tanh(.) in (1/kappa, kappa)  (Eq. 8)
+alpha: 0.8             # EMA temporal smoothing factor of step-level uncertainty               (Eq. 7)
+attn_sensitivity: 0.3  # sensitivity multiplier inside tanh(attn_sensitivity * delta_u)
+                       #   (controls how strongly delta_u drives gamma)

@@ -1,0 +1,32 @@
+# Selective LWE: vanilla consistency check first; LWE only on inconsistent samples.
+
+seed: 123
+method: selective_lwe
+temperature: 0.0
+
+prompts:
+  initial_meta_prompt: null
+  vanilla_judge_prompt: null
+
+lwe:
+  restrict_length: false
+  max_meta_prompt_length: 10000
+
+model:
+  model_type: gpt
+  model_name: gpt-4.1-2025-04-14
+  max_try: 10
+
+dataset:
+  name: vlrewardbench
+  data_path: data/vlrewardbench/vlrewardbench_test.jsonl
+  image_prefix: ""
+  order_ids_path: null
+  strict_order: false
+  data_start_idx: null
+  data_end_idx: 40
+  swap: false
+  shuffle: true
+  batch_size: 4
+
+out_dir: runs

@@ -1,0 +1,82 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 0, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 1, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 2, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 3, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 1,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 10, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 11, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 12, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 13, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 2,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 20, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 21, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 22, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 23, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-1B"
+    },
+    {
+        "client_id": 3,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 30, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 31, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 32, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 33, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 4,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 40, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 41, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 42, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 43, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-1B"
+    },
+    {
+        "client_id": 5,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 50, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 51, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 52, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 53, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 6,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 60, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 61, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 62, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 63, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-1B"
+    },
+    {
+        "client_id": 7,
+        "datasets":[
+            {"dataset": "Fed-aya_topic","subset_id": 70, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 71, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 72, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "Fed-aya_topic","subset_id": 73, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-1B"
+    }
+]

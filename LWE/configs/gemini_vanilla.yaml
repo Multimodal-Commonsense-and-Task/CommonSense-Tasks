@@ -1,0 +1,23 @@
+seed: 123
+method: vanilla
+temperature: 0.0
+run_swap: true
+
+model:
+  model_type: gemini
+  model_name: gemini-2.5-pro
+  max_try: 10
+
+dataset:
+  name: mmrewardbench
+  data_path: data/mmrewardbench/mmrewardbench_test.jsonl
+  image_prefix: ""
+  order_ids_path: null
+  strict_order: false
+  data_start_idx: null
+  data_end_idx: 12
+  swap: false
+  shuffle: true
+  batch_size: 4
+
+out_dir: runs

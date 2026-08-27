@@ -1,0 +1,35 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "DreamSim",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 1,
+        "datasets": [
+            {
+                "dataset": "Mantis_contrastive_caption",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    },
+    {
+        "client_id": 2,
+        "datasets": [
+            {
+                "dataset": "imagecode",
+                "subset_id": 0,
+                "type": "multi-choice"
+            }
+        ],
+        "model_id": "thkim0305/llama3.2_3B_vl"
+    }
+]

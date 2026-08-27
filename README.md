@@ -31,3 +31,79 @@
 * Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback (VLM-RLAIF) (ACL 2024) - Daechul Ahn, Yura Choi, Youngjae Yu, Dongyeop Kang and Jonghyun Choi
 
   * A new approach called VLM-RLAIF uses Reinforcement Learning from AI Feedback to improve video-text alignment in video large multimodal models (VLMMs), addressing the limitations of existing methods that struggle due to insufficient multimodal training data. The system incorporates detailed video descriptions during preference feedback generation (context-aware reward modeling) and outperforms existing approaches on various video benchmarks.
+
+### 2025
+
+* Multi-Modal Grounded Planning and Efficient Replanning For Learning Embodied Agents with A Few Examples (FLARE) (AAAI 2025) - Taewoong Kim, Byeonghwi Kim and Jonghyun Choi.
+
+  * FLARE grounds few-shot language planning in visual observations and uses visual cues to correct ambiguous instructions and efficiently replan embodied tasks.
+
+* ISR-DPO: Aligning Large Multimodal Models for Videos by Iterative Self-Retrospective DPO (ISR-DPO) (AAAI 2025) - Daechul Ahn, Yura Choi, San Kim, Youngjae Yu, Dongyeop Kang and Jonghyun Choi.
+
+  * ISR-DPO uses iterative self-retrospection to produce more visually grounded video preferences while reducing hallucination and length bias during preference optimization.
+
+* Budgeted Online Continual Learning by Adaptive Layer Freezing and Frequency-based Sampling (Budgeted-CL) (ICLR 2025) - Minhyuk Seo, Hyunseo Koh and Jonghyun Choi.
+
+  * Budgeted-CL compares continual-learning methods under explicit compute and memory budgets, then saves resources through adaptive layer freezing and frequency-based replay sampling.
+
+* Moment-Aware Video Retrieval for Video Corpus Moment Retrieval (IEEE Access 2025) - Yura Choi, Daechul Ahn and Jonghyun Choi.
+
+  * This work jointly connects video retrieval and moment retrieval and uses curriculum-based negative sampling for finer temporal query-video alignment.
+
+* Representation Bending for Large Language Model Safety (RepBend) (ACL 2025) - Ashkan Yousefpour, Taeheon Kim, Ryan S. Kwon, Seungbeen Lee, Wonje Jeung, Seungju Han, Alvin Wan, Harrison Ngan, Youngjae Yu and Jonghyun Choi.
+
+  * RepBend turns activation-steering ideas into a loss-based fine-tuning method that disrupts harmful internal representations while preserving model utility.
+
+* Large Language Models Still Exhibit Bias in Long Text (LTF-TEST) (ACL Findings 2025) - Wonje Jeung, Dongjae Jeon, Ashkan Yousefpour and Jonghyun Choi.
+
+  * LTF-TEST evaluates subtle demographic bias in long-form generation across many topics and demographic axes, together with a fine-tuning approach for mitigation.
+
+* Society of Mind Meets Real-Time Strategy: A Hierarchical Multi-Agent Framework for Strategic Reasoning (HIMA) (COLM 2025) - Daechul Ahn, San Kim and Jonghyun Choi.
+
+  * HIMA combines specialized imitation-learning agents with a strategic planner to produce adaptive long-horizon plans in real-time strategy environments.
+
+* Online Generic Event Boundary Detection (ESTimator) (ICCV 2025) - Hyungrok Jung, Daneul Kim, Seunggyun Lim, Jeany Son and Jonghyun Choi.
+
+  * ESTimator detects generic event boundaries in streaming video by anticipating future frames and identifying statistically meaningful prediction errors online.
+
+* GenOL: Generating Diverse Examples for Name-only Online Learning (GenOL) (TMLR 2025) - Minhyuk Seo, Seongwon Cho, Minjae Lee, Diganta Misra, Hyeonbeom Choi, Seon Joo Kim and Jonghyun Choi.
+
+  * GenOL replaces manually labeled or web-scraped supervision with diverse generated examples selected across prompts and generative models for name-only online learning.
+
+### 2026
+
+* An Information Theoretic Evaluation Metric for Strong Unlearning (IDI) (AAAI 2026) - Dongjae Jeon, Wonje Jeung, Taeheon Kim, Albert No and Jonghyun Choi.
+
+  * The Information Difference Index evaluates strong machine unlearning by measuring how much label information remains in a model's intermediate representations.
+
+* What Happens When: Learning Temporal Order of Events in Videos (VECTOR) (WACV 2026) - Daechul Ahn, Yura Choi, Hyeonbeom Choi, Seongwon Cho, San Kim and Jonghyun Choi.
+
+  * VECTOR benchmarks whether video-language models truly understand event order, while MECoT improves temporal reasoning with multi-event instruction tuning and chain-of-thought prompting.
+
+* Becoming Experienced Judges: Selective Test-Time Learning for Evaluators (LWE) (EACL 2026) - Seongyeon Jwa, Daechul Ahn, Reokyoung Kim, Dongyeop Kang and Jonghyun Choi.
+
+  * LWE lets language-model evaluators accumulate reusable evaluation insights at test time and selectively update them on self-inconsistent cases.
+
+* Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients (Co-LoRA) (ICLR 2026) - Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi and Tinne Tuytelaars.
+
+  * Co-LoRA enables personalized federated learning across clients with different tasks and model architectures through relevance-aware aggregation and dimension-invariant adapters.
+
+* BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Commands (BINDER) (ICRA 2026) - Seongwon Cho, Daechul Ahn, Donghyun Shin, Hyeonbeom Choi, San Kim and Jonghyun Choi.
+
+  * BINDER couples deliberative task planning with continuous video-based monitoring so mobile manipulators can react and replan as environments change.
+
+* DBMSolver: A Training-free Diffusion Bridge Sampler for High-Quality Image-to-Image Translation (DBMSolver) (CVPR 2026) - Sankarshana Venugopal, Mohammad Mostafavi and Jonghyun Choi.
+
+  * DBMSolver applies exponential integrators to diffusion bridge dynamics for faster high-quality image-to-image translation without additional training.
+
+* FALCON: Fast Adaptive Lightweight Computation of Intensities and Events for Depth Estimation (FALCON) (CVPR Findings 2026) - Sankarshana Venugopal, Mohammad Mostafavi and Jonghyun Choi.
+
+  * FALCON adaptively computes image intensities and events to make event-assisted depth estimation more efficient.
+
+* OASIS: Online Sample Selection for Continual Instruction Tuning (OASIS) (ACL 2026) - Minjae Lee, Minhyuk Seo, Tingyu Qu, Tinne Tuytelaars and Jonghyun Choi.
+
+  * OASIS adaptively selects informative, non-redundant samples from a streaming instruction-tuning workload without relying on a pre-trained reference model.
+
+* SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models (SCALE) (ICML 2026) - Hyunbeom Choi, Daechul Ahn, Youhan Lee, Taewook Kang, Seongwon Cho and Jonghyun Choi.
+
+  * SCALE uses a vision-language-action model's own uncertainty to adapt both visual perception and action decoding in a single inference pass.

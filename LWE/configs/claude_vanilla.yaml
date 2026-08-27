@@ -1,0 +1,24 @@
+seed: 123
+method: vanilla
+temperature: 0.0
+run_swap: true
+
+model:
+  model_type: claude
+  model_name: claude-sonnet-4-5-20250929
+  max_try: 10
+  max_tokens: 62000
+
+dataset:
+  name: mmrewardbench
+  data_path: data/mmrewardbench/mmrewardbench_test.jsonl
+  image_prefix: ""
+  order_ids_path: null
+  strict_order: false
+  data_start_idx: null
+  data_end_idx: 12
+  swap: false
+  shuffle: true
+  batch_size: 4
+
+out_dir: runs

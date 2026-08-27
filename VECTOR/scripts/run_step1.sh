@@ -1,0 +1,162 @@
+#!/bin/bash
+# ==============================================================================
+# Step 1: Generate video descriptions for all tasks
+#
+# Usage:
+#   bash scripts/run_step1.sh --gpus 0,1,2,3 --task_id 1 --level 1
+#   bash scripts/run_step1.sh --gpus 0,1,2,3 --task_id 3 --level 1 --variant single
+#   bash scripts/run_step1.sh --gpus 0,1,2,3 --task_id 5 --level 1
+# ==============================================================================
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+# ---- Defaults ----
+CKPT="${PROJECT_ROOT}/checkpoints/llava-onevision-qwen2-7b-ov-multi-event"
+GPU_STR=""
+TASK_ID=""
+LEVEL=""
+VARIANT=""
+
+# ---- Parse Arguments ----
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --gpus)     GPU_STR="$2";  shift 2 ;;
+        --task_id)  TASK_ID="$2";  shift 2 ;;
+        --level)    LEVEL="$2";    shift 2 ;;
+        --variant)  VARIANT="$2";  shift 2 ;;
+        --ckpt)     CKPT="$2";    shift 2 ;;
+        *) echo "Unknown arg: $1"; exit 1 ;;
+    esac
+done
+
+if [ -z "$GPU_STR" ] || [ -z "$TASK_ID" ] || [ -z "$LEVEL" ]; then
+    echo "Usage: $0 --gpus 0,1,2,3 --task_id <1-5> --level <1|2> [--variant single|double|triple] [--ckpt PATH]"
+    exit 1
+fi
+
+# ---- GPU setup ----
+IFS=',' read -ra GPULIST <<< "$GPU_STR"
+CHUNKS=${#GPULIST[@]}
+
+# ---- Fixed configuration ----
+NFRAME=32
+CONV_MODE=qwen_1_5
+POOL_STRIDE=2
+TEMPERATURE=0
+OVERWRITE=True
+VIDEO_DIR="${PROJECT_ROOT}/kinetics-dataset/k700-2020/val"
+VNAME2CLS="${PROJECT_ROOT}/kinetics-dataset/kinetics_jsonl/k700_vname2cls.json"
+DATA_BASE="${PROJECT_ROOT}/kinetics-dataset/kinetics_jsonl"
+CKPT_NAME=$(basename "$CKPT")
+RESULT_BASE="${PROJECT_ROOT}/results/${CKPT_NAME}/step1"
+
+export TOKENIZERS_PARALLELISM=false
+
+# ---- Build data file list based on task_id + level ----
+declare -a DATA_FILES=()
+declare -a OUTPUT_TAGS=()
+
+case $TASK_ID in
+    1)
+        DATA_FILES=("${DATA_BASE}/task1/full_sequence_ordering_L${LEVEL}.jsonl")
+        OUTPUT_TAGS=("task1_L${LEVEL}")
+        ;;
+    2)
+        DATA_FILES=("${DATA_BASE}/task2/sub_sequence_ordering_L${LEVEL}.jsonl")
+        OUTPUT_TAGS=("task2_L${LEVEL}")
+        ;;
+    3)
+        if [ -n "$VARIANT" ]; then
+            VARIANTS=("$VARIANT")
+        else
+            VARIANTS=(single double triple)
+        fi
+        for V in "${VARIANTS[@]}"; do
+            DATA_FILES+=("${DATA_BASE}/task3/${V}_event_detection_L${LEVEL}.jsonl")
+            OUTPUT_TAGS+=("task3_L${LEVEL}_${V}")
+        done
+        ;;
+    4)
+        DATA_FILES=("${DATA_BASE}/task4/single_anomaly_L${LEVEL}.jsonl")
+        OUTPUT_TAGS=("task4_L${LEVEL}")
+        ;;
+    5)
+        # L1: shorter patterns (ABABAB, ABCABC), L2: longer patterns (ABABABAB, ABCABCABC)
+        if [ "$LEVEL" = "1" ]; then
+            PATTERNS=(ABABAB ABCABC)
+        else
+            PATTERNS=(ABABABAB ABCABCABC)
+        fi
+        for P in "${PATTERNS[@]}"; do
+            DATA_FILES+=("${DATA_BASE}/task5/discordant_event_position_identification_${P}_L${LEVEL}.jsonl")
+            OUTPUT_TAGS+=("task5_L${LEVEL}_${P}")
+        done
+        ;;
+    *)
+        echo "Error: task_id must be 1-5, got: $TASK_ID"
+        exit 1
+        ;;
+esac
+
+# ---- Run inference for each data file ----
+echo "============================================"
+echo "Step 1: Generate Video Descriptions"
+echo "============================================"
+echo "  Checkpoint: ${CKPT}"
+echo "  Task:       ${TASK_ID}"
+echo "  Level:      ${LEVEL}"
+echo "  GPUs:       ${GPULIST[*]} (${CHUNKS} chunks)"
+echo "============================================"
+
+for i in "${!DATA_FILES[@]}"; do
+    DATA_PATH="${DATA_FILES[$i]}"
+    TAG="${OUTPUT_TAGS[$i]}"
+    OUTPUT_DIR="${RESULT_BASE}/${TAG}"
+    OUTPUT_FILE="${OUTPUT_DIR}.jsonl"
+
+    if [ ! -f "$DATA_PATH" ]; then
+        echo "WARNING: Data file not found: ${DATA_PATH}"
+        continue
+    fi
+
+    echo ""
+    echo "--- ${TAG} ---"
+    echo "  Input:  ${DATA_PATH}"
+    echo "  Output: ${OUTPUT_DIR}"
+
+    mkdir -p "${OUTPUT_DIR}"
+
+    # Launch parallel inference across GPUs
+    for IDX in $(seq 0 $((CHUNKS - 1))); do
+        CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python3 "${PROJECT_ROOT}/eval/infer_describe.py" \
+            --model-path "$CKPT" \
+            --video_path "$VIDEO_DIR" \
+            --gt_file "$DATA_PATH" \
+            --output_dir "$OUTPUT_DIR" \
+            --vname2cls "$VNAME2CLS" \
+            --conv-mode "$CONV_MODE" \
+            --for_get_frames_num "$NFRAME" \
+            --mm_spatial_pool_stride "$POOL_STRIDE" \
+            --temperature "$TEMPERATURE" \
+            --overwrite "$OVERWRITE" \
+            --overwrite_infercfg true \
+            --num-chunks "$CHUNKS" \
+            --chunk-idx "$IDX" &
+    done
+    wait
+
+    # Concatenate chunk outputs
+    > "$OUTPUT_FILE"
+    for IDX in $(seq 0 $((CHUNKS - 1))); do
+        cat "${OUTPUT_DIR}/${CHUNKS}_${IDX}.jsonl" >> "$OUTPUT_FILE"
+    done
+    echo "  Combined: ${OUTPUT_FILE} ($(wc -l < "$OUTPUT_FILE") lines)"
+done
+
+echo ""
+echo "============================================"
+echo "Step 1 Complete"
+echo "============================================"

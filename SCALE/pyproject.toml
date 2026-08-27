@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scale-vla"
+authors = [
+    {name = "Hyeonbeom Choi"},
+    {name = "Daechul Ahn"},
+]
+description = "SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["vision-language-action models", "test-time scaling", "robot learning", "openvla"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "accelerate>=0.25.0",
+    "draccus==0.8.0",
+    "einops",
+    "huggingface_hub",
+    "imageio[ffmpeg]",
+    "matplotlib",
+    "numpy",
+    "pyyaml",
+    "rich",
+    "sentencepiece==0.1.99",
+    "timm==0.9.10",
+    "tokenizers==0.19.1",
+    "tqdm",
+    "torch==2.2.0",
+    "torchvision==0.17.0",
+    "torchaudio==2.2.0",
+    "transformers==4.40.1",
+    "wandb",
+    "tensorflow==2.15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.2.0",
+    "ipython",
+    "ruff>=0.2.2",
+]
+
+[project.urls]
+homepage = "https://github.com/snumprlab/scale"
+repository = "https://github.com/snumprlab/scale"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["prismatic*"]
+
+[tool.black]
+line-length = 121
+target-version = ["py38", "py39", "py310"]
+
+[tool.ruff]
+line-length = 121
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["A", "B", "E", "F", "I", "RUF", "W"]
+ignore = ["F722"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402", "F401"]

@@ -1,0 +1,52 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "FS_LLM_Instruct","subset_id": 0, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 1, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 2, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 3, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.1-8B"
+    },
+    {
+        "client_id": 1,
+        "datasets":[
+            {"dataset": "FS_LLM_Instruct","subset_id": 10, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 11, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 12, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 13, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 2,
+        "datasets":[
+            {"dataset": "FS_LLM_Instruct","subset_id": 14, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 15, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 16, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 17, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 3,
+        "datasets":[
+            {"dataset": "FS_LLM_Instruct","subset_id": 20, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 21, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 22, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 23, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.2-3B"
+    },
+    {
+        "client_id": 4,
+        "datasets":[
+            {"dataset": "FS_LLM_Instruct","subset_id": 24, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 25, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 26, "type":"open-ended", "metric":"RougeL"},
+            {"dataset": "FS_LLM_Instruct","subset_id": 27, "type":"open-ended", "metric":"RougeL"}
+        ],
+        "model_id": "meta-llama/Llama-3.1-8B"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "GQA","subset_id": 10, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 11, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 12, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 13, "type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 1,
+        "datasets":[
+            {"dataset": "GQA","subset_id": 20, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 21, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 22, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 23, "type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 2,
+        "datasets":[
+            {"dataset": "GQA","subset_id": 30, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 31, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 32, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 33, "type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 3,
+        "datasets":[
+            {"dataset": "Abstract","subset_id": 0,"type":"multi-choice"},
+            {"dataset": "Abstract","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "Abstract","subset_id": 2, "type":"multi-choice"},
+            {"dataset": "Abstract","subset_id": 3,"type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 4,
+        "datasets":[
+            {"dataset": "SNLI-VE","subset_id": 0,"type":"multi-choice"},
+            {"dataset": "SNLI-VE","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "SNLI-VE","subset_id": 2, "type":"multi-choice"},
+            {"dataset": "SNLI-VE","subset_id": 3,"type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 5,
+        "datasets":[
+            {"dataset": "COCOQA","subset_id": 0,"type":"multi-choice"},
+            {"dataset": "COCOQA","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "COCOQA","subset_id": 2, "type":"multi-choice"},
+            {"dataset": "COCOQA","subset_id": 3,"type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 6,
+        "datasets":[
+            {"dataset": "NLVR2_feddat","subset_id": 0,"type":"multi-choice"},
+            {"dataset": "NLVR2_feddat","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "NLVR2_feddat","subset_id": 2, "type":"multi-choice"},
+            {"dataset": "NLVR2_feddat","subset_id": 3,"type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 7,
+        "datasets":[
+            {"dataset": "VizWiz-Original","subset_id": 0,"type":"multi-choice"},
+            {"dataset": "VizWiz-Original","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "VizWiz-Original","subset_id": 2, "type":"multi-choice"},
+            {"dataset": "VizWiz-Original","subset_id": 3,"type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    },
+    {
+        "client_id": 8,
+        "datasets":[
+            {"dataset": "AQUA","subset_id": 0,"type":"multi-choice"},
+            {"dataset": "AQUA","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "AQUA","subset_id": 2,"type":"multi-choice"},
+            {"dataset": "AQUA","subset_id": 3,"type":"multi-choice"}
+        ],
+        "model_id": "thkim0305/llama3.2_1B_vl"
+    }
+]

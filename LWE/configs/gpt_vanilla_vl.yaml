@@ -1,0 +1,23 @@
+seed: 123
+method: vanilla
+temperature: 0.0
+run_swap: true
+
+model:
+  model_type: gpt
+  model_name: gpt-4.1-2025-04-14
+  max_try: 10
+
+dataset:
+  name: vlrewardbench
+  data_path: data/vlrewardbench/vlrewardbench_test.jsonl
+  image_prefix: ""
+  order_ids_path: null
+  strict_order: false
+  data_start_idx: null
+  data_end_idx: 12 # debug
+  swap: true
+  shuffle: true
+  batch_size: 4
+
+out_dir: runs

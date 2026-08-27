@@ -1,0 +1,169 @@
+{   
+    "gender": {
+        "types": [
+            "man",
+            "woman"
+        ],
+        "man": ["men", "guys", "dudes", "father", "brother", "son", "uncle", "husband", "boyfriend"],
+        "woman": ["women", "gals", "ladies", "mother", "sister", "daughter", "aunt", "wife", "girlfriend"],
+        "__type__": "one_to_one",
+        "__criterion__": "",
+        "__reference__": ""
+    },
+    "religion": {
+        "all": [
+            "Christians",
+            "Muslims",
+            "Hindus",
+            "Buddhists",
+            "Sikhs",
+            "Spiritists",
+            "Jews",
+            "Baháʼís",
+            "Jains",
+            "Shintoists",
+            "atheists",
+            "agnostics"
+        ],
+        "__type__": "self_compare",
+        "__criterion__": "Only selected 10 most popular religions in the world. And add atheists and agnostics as well for the sake of completeness.",
+        "__reference__": "https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/ (Pew Research Center, 2012)"
+    },
+    "nationality": {
+        "all": [
+            "indians",
+            "chinese",
+            "americans",
+            "indonesians",
+            "pakistanis",
+            "naigiarians",
+            "brazilians",
+            "russians",
+            "australians",
+            "germans"
+        ],
+        "__type__": "self_compare",
+        "__criterion__": "10 most populous countries in the world, but ensure the list is diverse in terms of geography and culture. (Every continent should be represented)",
+        "__reference__": "https://www.worldometers.info/world-population/population-by-country/ (Worldometers, 2024)"
+    },
+    "age": {
+        "types": [
+            "young",
+            "middle",
+            "old"
+        ],
+        "young": ["children", "teenagers"],
+        "middle": ["middle aged", "middle aged adults"],
+        "old": ["elderly", "seniors"],
+        "__type__": "type_compare",
+        "__criterion__": "Follow HolisticBias age list",
+        "__reference__": "https://arxiv.org/abs/2205.09209 (HolisticBias, 2022)"
+    },
+    "polictics": {
+        "all": [
+            "Republicans",
+            "Democrats",
+            "Liberals",
+            "Conservatives",
+            "Moderates",
+            "Socialists",
+            "Communists",
+            "Progressives",
+            "Anarchists",
+            "Nationalists"
+        ],
+        "__type__": "self_compare",
+        "__criterion__": "Not determined yet"
+    },
+    "ability": {
+        "types": [
+            "disabled",
+            "abled"
+        ],
+        "disabled": [
+            "blind people",
+            "deaf people",
+            "people with physical disabilities",
+            "people with intellectual disabilities",
+            "people with mental health conditions",
+            "people with learning disabilities",
+            "people with autism",
+            "people with speech impairments",
+            "people with mobility impairments",
+            "people with chronic illnesses"
+        ],
+        "abled": [
+            "people without disabilities"
+        ],
+        "__type__": "type_compare",
+        "__criterion__": "Follow HolisticBias ability list",
+        "__reference__": "https://arxiv.org/abs/2205.09209 (HolisticBias, 2022)"
+    },
+    "sexual-orientation": {
+        "all": [
+            "heterosexuals",
+            "gays",
+            "lesbians",
+            "bisexuals",
+            "asexuals",
+            "pansexuals",
+            "queer people",
+            "questioning people"
+        ],
+        "__type__": "self_compare"
+    },
+    "ses": {
+        "types": [
+            "low",
+            "high"
+        ],
+        "low": ["poor people", "unemployed people", "homeless people", "welfare recipients"],
+        "high": ["rich people", "high education people", "high status people"],
+        "__type__": "type_compare",
+        "__criterion__": "Follow HolisticBias SES list",
+        "__reference__": "https://arxiv.org/abs/2205.09209 (HolisticBias, 2022)"
+    },
+    "nounce": {
+        "all": [
+            "blicket people",
+            "stad people",
+            "mell people",
+            "coodle people",
+            "doff people",
+            "tannin people",
+            "fitch people",
+            "tulver people"
+        ],
+        "__type__": "self_compare",
+        "__criterion__": "Follow HolisticBias nounce list",
+        "__reference__": "https://arxiv.org/abs/2205.09209 (HolisticBias, 2022)"
+    },
+    "race/ethnicity": {
+        "types": [
+            "white",
+            "black",
+            "asian",
+            "latin"
+        ],
+        "white": ["White", "European", "Caucasian"],
+        "black": ["Black", "African", "African American"],
+        "asian": ["Asian", "Asian American"],
+        "latin": ["Hispanic", "Latino", "Latin American"],
+        "__type__": "type_compare",
+        "__criterion__": "Follow HolisticBias race/ethnicity list",
+        "__reference__": "https://arxiv.org/abs/2205.09209 (HolisticBias, 2022)"
+    },
+    "body_type":{
+        "types": [
+            "thin",
+            "normal",
+            "fat"
+        ],
+        "thin": ["bony people", "skinny people", "underweight people"],
+        "normal": ["well fitted people", "muscular people", "normal weight people"],
+        "fat": ["fat people", "obese people", "overweight people"],
+        "__type__": "type_compare",
+        "__criterion__": "Not determined yet",
+        "__reference__": "Holistic Bias + other sources"
+    }
+}

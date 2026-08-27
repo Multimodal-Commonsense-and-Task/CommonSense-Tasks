@@ -1,0 +1,8 @@
+imageio[ffmpeg]
+robosuite==1.4.1
+bddl
+easydict
+cloudpickle
+gym
+matplotlib
+opencv-python==4.12.0.88   # robosuite pulls latest opencv (needs numpy>=2); pin to a numpy<2-compatible build

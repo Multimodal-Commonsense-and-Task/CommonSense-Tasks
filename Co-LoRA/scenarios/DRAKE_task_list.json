@@ -1,0 +1,51 @@
+[
+    {"dataset": "Fashion200K","subset_id": 0, "type":"multi-choice", "Desc":"Cloth Counting"},
+    {"dataset": "Fashion200K","subset_id": 1, "type":"multi-choice", "Desc":"3 Image Style T/F"},
+    {"dataset": "Fashion200K","subset_id": 2, "type":"multi-choice", "Desc":"4 Image Color T/F"},
+    {"dataset": "FashionIQ","subset_id": 0, "type":"multi-choice", "Desc":"Query-Reference Caption T/F"},
+
+    {"dataset": "NLVR2","subset_id": 0,"type":"multi-choice", "Desc":"Dual Image Relationship Check"},
+    {"dataset": "NLVR2","subset_id": 1,"type":"multi-choice", "Desc":"Dual Image Relationship Check"},
+    {"dataset": "CIRR","subset_id": 0,"type":"multi-choice", "Desc":"Image Transition Caption T/F"},
+    {"dataset": "VISION","subset_id": 0, "type":"multi-choice", "Desc":"2 Image T/F"},
+    {"dataset": "VISION","subset_id": 1, "type":"multi-choice", "Desc":"4 Image T/F"},
+    {"dataset": "MagicBrush","subset_id": 0, "type":"multi-choice", "Desc":"Image Edit Instruction Direction Check"},
+    
+    {"dataset": "VSR","subset_id": 0,"type":"multi-choice", "Desc":"Spatial Understanding"},
+    {"dataset": "SEED-Bench-2","subset_id": 2,"type":"multi-choice", "Desc":"Temporal Understanding"},
+
+    {"dataset": "IRFL","subset_id": 0, "type":"multi-choice", "Desc":"Figurative Verification T/F"},
+    {"dataset": "IRFL","subset_id": 1, "type":"multi-choice", "Desc":"Image Selection for Idiom"},
+    {"dataset": "IRFL","subset_id": 2, "type":"multi-choice", "Desc":"Image Selection for Metaphor"},
+    {"dataset": "IRFL","subset_id": 3, "type":"multi-choice", "Desc":"Phrase Selection for Image"},
+    
+    {"dataset": "Bongard-OpenWorld","subset_id": 0, "type":"multi-choice", "Desc":"Positive/Negative Concept Query"},
+    {"dataset": "Bongard-OpenWorld","subset_id": 1, "type":"multi-choice", "Desc":"Common Concept Detection"},
+    {"dataset": "Bongard-HOI","subset_id": 0, "type":"multi-choice", "Desc":"Positive/Negative Concept Query"},
+    {"dataset": "Bongard-HOI","subset_id": 1, "type":"multi-choice", "Desc":"Common Action Detection"},
+    {"dataset": "Bongard-HOI","subset_id": 2, "type":"multi-choice", "Desc":"Action Incoherence Recognition"},
+    
+    {"dataset": "COMICS_Dialogue","subset_id": 0, "type":"multi-choice", "Desc":"Dialogue prediction"},
+    {"dataset": "VizWiz","subset_id": 0, "type":"multi-choice", "Desc":"Question-Answer Difference"},
+    {"dataset": "MIT-States","subset_id": 0, "type":"multi-choice", "Desc":"State Recognition"},
+    
+    {"dataset": "Co-Instruct-DB","subset_id": 0, "type":"multi-choice", "Desc":"How/What QA"},
+    {"dataset": "Co-Instruct-DB","subset_id": 1, "type":"multi-choice", "Desc":"Yes/No QA"},
+    {"dataset": "Co-Instruct-DB","subset_id": 2, "type":"multi-choice", "Desc":"2 Image Quality Compare QA"},
+    {"dataset": "Co-Instruct-DB","subset_id": 3, "type":"multi-choice", "Desc":"3 Image Quality Compare QA"},
+
+    {"dataset": "TQA","subset_id": 0, "type":"multi-choice", "Desc":"Textbook QA"},
+    {"dataset": "dvqa","subset_id": 0, "type":"multi-choice", "Desc":"Barchat QA"},
+    {"dataset": "SEED-Bench-2","subset_id": 0, "type":"multi-choice", "Desc":"Instance-Level QA"},
+    {"dataset": "SEED-Bench-2","subset_id": 1, "type":"multi-choice", "Desc":"KGQA"},
+    
+    {"dataset": "iconqa","subset_id": 0, "type":"multi-choice", "Desc":"Multi-Choice QA (Prek & Kindergarten)"},
+    {"dataset": "iconqa","subset_id": 1, "type":"multi-choice", "Desc":"Multi-Choice QA (Grade 1 & 2"},
+    {"dataset": "iconqa","subset_id": 2, "type":"open-ended", "metric":"F1", "Desc":"Short Answering QA (Prek & Kindergarten)"},
+    {"dataset": "iconqa","subset_id": 3, "type":"open-ended", "metric":"F1", "Desc":"Short Answering QA (Grade 1 & 2)"},
+    
+    {"dataset": "WCVQA","subset_id": 0, "type":"multi-choice", "Desc":"Dish Name Prediction"},
+    {"dataset": "WCVQA","subset_id": 1, "type":"multi-choice", "Desc":"Contextualized Dish Name Prediction"},
+    {"dataset": "WCVQA","subset_id": 2, "type":"multi-choice", "Desc":"Dish Name Prediction with Adversarial Context"},
+    {"dataset": "WCVQA","subset_id": 3, "type":"multi-choice", "Desc":"Location Prediction"}
+]
