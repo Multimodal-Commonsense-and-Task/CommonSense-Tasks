@@ -1,0 +1,10 @@
+# PACS generated
+
+dataset: 'cct' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  flickr: './datasets/neurips/cct/cct_flickr_subsampled_filtered'
+  google: './datasets/neurips/cct/cct_google_subsampled_filtered'
+  bing: './datasets/neurips/cct/cct_bing_subsampled_filtered'
+
+pickle_save_path: './RMD_scores/cct_final_web_newsample_rmd.pkl'

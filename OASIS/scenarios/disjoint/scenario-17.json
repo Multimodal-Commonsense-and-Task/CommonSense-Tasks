@@ -1,0 +1,14 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "Bongard-OpenWorld","subset_id": 99, "type":"multi-choice"},
+            {"dataset": "NLVR2","subset_id": 99, "type":"multi-choice"},
+            {"dataset": "Co-Instruct-DB","subset_id": 99, "type":"multi-choice"},
+            {"dataset": "Bongard-HOI","subset_id": 99, "type":"multi-choice"},
+            {"dataset": "PatternCom-2","subset_id": 99, "type":"multi-choice"},
+            {"dataset": "dvqa","subset_id": 99, "type":"multi-choice"},
+            {"dataset": "HQ_Edit","subset_id": 99, "type":"multi-choice"}
+        ] 
+    }
+]

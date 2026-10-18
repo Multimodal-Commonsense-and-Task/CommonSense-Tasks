@@ -1,0 +1,15 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "ScienceQA","subset_id": 4, "type":"onlyLang"},
+            {"dataset": "TextVQA","subset_id": 6, "type":"ocr"},
+            {"dataset": "ImageNet","subset_id": 4, "type":"classification"},
+            {"dataset": "GQA","subset_id": 4, "type":"truth-alignment"},
+            {"dataset": "VizWiz2","subset_id": 4, "type":"truth-alignment"},
+            {"dataset": "COCO2014","subset_id": 4, "type":"grounding"},
+            {"dataset": "COCO2014","subset_id": 5, "type":"truth-alignment"},
+            {"dataset": "OCR-VQA","subset_id": 4, "type":"truth-alignment"}
+        ]
+    }
+]

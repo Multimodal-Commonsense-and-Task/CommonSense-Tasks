@@ -1,0 +1,4 @@
+# Python cache and compiled bytecode
+__pycache__/
+*.py[cod]
+*$py.class

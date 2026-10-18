@@ -1,0 +1,12 @@
+# PACS generated
+
+embedding_model: 'clip'
+dataset: 'DomainNet' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  sdxl: './raw_datasets/iclr_generated/DomainNet/DomainNet_sdbp_sdxl_subsampled_filtered'
+  floyd: './raw_datasets/iclr_generated/DomainNet/DomainNet_sdbp_floyd_subsampled_filtered'
+  cogview2: './raw_datasets/iclr_generated/DomainNet/DomainNet_sdbp_cogview2_subsampled_filtered'
+  sd3: './raw_datasets/iclr_generated/DomainNet/DomainNet_sdbp_sd3_subsampled_filtered'
+  auraflow: './raw_datasets/iclr_generated/DomainNet/DomainNet_sdbp_auraflow_subsampled_filtered'
+json_save_path: './RMD_scores/DomainNet_sdbp_sdxl_floyd_cogview2_sd3_auraflow.json'

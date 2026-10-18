@@ -1,0 +1,22 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "longsequence","subset_id": 0, "type":"open-ended"},
+            {"dataset": "longsequence","subset_id": 1, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 2, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 3, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 4, "type":"open-ended"},
+            {"dataset": "longsequence","subset_id": 5, "type":"open-ended"},
+            {"dataset": "longsequence","subset_id": 6, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 7, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 8, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 9, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 10, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 11, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 12, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 13, "type":"multi-choice"},
+            {"dataset": "longsequence","subset_id": 14, "type":"multi-choice"}
+        ] 
+    }
+]

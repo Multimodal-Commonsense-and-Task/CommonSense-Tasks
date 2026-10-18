@@ -104,6 +104,14 @@
 
   * OASIS adaptively selects informative, non-redundant samples from a streaming instruction-tuning workload without relying on a pre-trained reference model.
 
+* Domain Arithmetic: One-Shot VLA Adaptation under Environmental Shifts (DART) (ECCV 2026) - Taewook Kang*, Taeheon Kim*, Donghyun Shin and Jonghyun Choi.
+
+  * DART isolates and transfers domain-specific weight components so a vision-language-action model can adapt to visual or robot embodiment shifts from a single demonstration.
+
+* Risk-adaptive Activation Steering for Safe Multimodal Large Language Models (MoRAS) (ECCV 2026) - Jonghyun Park, Minhyuk Seo, Chaewon Yeo and Jonghyun Choi.
+
+  * MoRAS detects safety-critical visual risk and adaptively steers multimodal model activations to mitigate image-based jailbreaks while preserving utility and reducing inference overhead.
+
 * SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models (SCALE) (ICML 2026) - Hyunbeom Choi, Daechul Ahn, Youhan Lee, Taewook Kang, Seongwon Cho and Jonghyun Choi.
 
   * SCALE uses a vision-language-action model's own uncertainty to adapt both visual perception and action decoding in a single inference pass.

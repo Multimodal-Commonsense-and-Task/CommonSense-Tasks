@@ -1,0 +1,11 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "ChartQA","subset_id": 0, "type":"open-ended", "metric":"accuracy"},
+            {"dataset": "DocVQA","subset_id": 1, "type":"open-ended", "metric":"accuracy"},
+            {"dataset": "iconqa","subset_id": 0, "type":"multi-choice", "metric":"accuracy"},
+            {"dataset": "PathVQA","subset_id": 0, "type":"open-ended", "metric":"accuracy"}
+        ]
+    }
+]

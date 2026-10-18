@@ -1,0 +1,15 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "trace","subset_id": 0, "type":"open-ended"},
+            {"dataset": "trace","subset_id": 1, "type":"open-ended"},
+            {"dataset": "trace","subset_id": 2, "type":"open-ended"},
+            {"dataset": "trace","subset_id": 3, "type":"multi-choice"},
+            {"dataset": "trace","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "trace","subset_id": 5, "type":"open-ended"},
+            {"dataset": "trace","subset_id": 6, "type":"open-ended"},
+            {"dataset": "trace","subset_id": 7, "type":"open-ended"}
+        ] 
+    }
+]

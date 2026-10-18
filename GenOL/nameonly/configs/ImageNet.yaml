@@ -1,0 +1,12 @@
+# PACS generated
+
+embedding_model: 'clip'
+dataset: 'ImageNet_full' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  sdxl: '/home/user/smh/New_Nameonly_CL/nameonly/generate_twostage/generated_datasets/ImageNet_final/ImageNet_ours_sdxl_subsampled_filtered'
+  floyd: '/home/user/smh/New_Nameonly_CL/nameonly/generate_twostage/generated_datasets/ImageNet_final/ImageNet_ours_floyd_subsampled_filtered'
+  cogview2: '/home/user/smh/New_Nameonly_CL/nameonly/generate_twostage/generated_datasets/ImageNet_final/ImageNet_ours_cogview2_subsampled_filtered'
+  sd3: '/home/user/smh/New_Nameonly_CL/nameonly/generate_twostage/generated_datasets/ImageNet_final/ImageNet_ours_sd3_subsampled_filtered'
+  auraflow: '/home/user/smh/New_Nameonly_CL/nameonly/generate_twostage/generated_datasets/ImageNet_final/ImageNet_ours_auraflow_subsampled_filtered'
+json_save_path: './RMD_scores/ImageNet_ours_full_sdxl_floyd_cogview2_sd3_auraflow.json'

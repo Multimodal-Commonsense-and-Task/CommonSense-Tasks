@@ -1,0 +1,10 @@
+# PACS generated
+
+dataset: 'PACS' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  flickr: './datasets/neurips/PACS/PACS_flickr_subsampled_filtered'
+  google: './datasets/neurips/PACS/PACS_google_subsampled_filtered'
+  bing: './datasets/neurips/PACS/PACS_bing_subsampled_filtered'
+
+pickle_save_path: './RMD_scores/PACS_final_web_newsample_rmd.pkl'

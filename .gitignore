@@ -5,6 +5,18 @@
 /FLARE/MMP_results/
 /ISR-DPO/llava/serve/examples/*.mp4
 /FALCON/results/
+/MoRAS/datasets/
+/OASIS/importance/
+/GenOL/collections/
+/GenOL/backup/
+/GenOL/dataset/
+/GenOL/dino_resnet50_pretrain.pth
+/GenOL/nameonly/prompt_generation/prompts/
+/GenOL/nameonly/prompt_generation/diversity_prompts/
+/GenOL/nameonly/prompt_generation/quali_prompts/
+/DART/third_party/aloha/aloha2/workcell_v2/Aloha workcell v2.stl
+/DART/third_party/libero/libero/libero/assets/
+/DART/third_party/libero-view/libero/libero/assets/
 
 # Python bytecode and interpreter caches.
 __pycache__/

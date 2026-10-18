@@ -1,0 +1,13 @@
+# cifar10 generated
+
+embedding_model: 'clip'
+dataset: 'birds31' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  sdxl: './raw_datasets/iclr_rebuttal/birds31/birds31_50_2_sdxl_subsampled_filtered'
+  floyd: './raw_datasets/iclr_rebuttal/birds31/birds31_50_2_floyd_subsampled_filtered'
+  cogview2: './raw_datasets/iclr_rebuttal/birds31/birds31_50_2_cogview2_subsampled_filtered'
+  sd3: './raw_datasets/iclr_rebuttal/birds31/birds31_50_2_sd3_subsampled_filtered'
+  auraflow: './raw_datasets/iclr_rebuttal/birds31/birds31_50_2_auraflow_subsampled_filtered'
+
+json_save_path: './RMD_scores/birds31_50_2_sdxl_floyd_cogview2_sd3_auraflow.json'

@@ -1,0 +1,15 @@
+# PACS generated
+
+embedding_model: 'clip'
+dataset: 'PACS' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  sdxl: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_sdxl_subsampled_filtered'
+  floyd: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_floyd_subsampled_filtered'
+  cogview2: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_cogview2_subsampled_filtered'
+  sd3: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_sd3_subsampled_filtered'
+  flux: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_flux_subsampled_filtered'
+  kolors: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_kolors_subsampled_filtered'
+  auraflow: './raw_datasets/iclr_generated/PACS/PACS_final_cot_100_2_auraflow_subsampled_filtered'
+
+json_save_path: './RMD_scores/PACS_final_cot_100_2_sdxl_floyd_cogview2_sd3_flux_kolors_auraflow.json'

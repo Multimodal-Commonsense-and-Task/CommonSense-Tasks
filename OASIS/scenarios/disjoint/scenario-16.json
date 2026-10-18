@@ -1,0 +1,11 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "M3IT","subset_id": 3, "type":"open-ended", "metric":"accuracy"},
+            {"dataset": "MANTIS","subset_id": 2, "type":"open-ended", "metric":"accuracy"},
+            {"dataset": "LaMM","subset_id": 2, "type":"open-ended", "metric":"accuracy"},
+            {"dataset": "VisionFLAN","subset_id": 2, "type":"open-ended", "metric":"accuracy"}
+        ]
+    }
+]

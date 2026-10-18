@@ -1,0 +1,12 @@
+# PACS generated
+
+embedding_model: 'clip'
+dataset: 'CUB_200' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  sdxl: '/data2/home/user/mjlee/CUB_200_ours/CUB_200_50_2_sdxl_subsampled_filtered'
+  floyd: '/data2/home/user/mjlee/CUB_200_ours/CUB_200_50_2_floyd_subsampled_filtered'
+  cogview2: '/data2/home/user/mjlee/CUB_200_ours/CUB_200_50_2_cogview2_subsampled_filtered'
+  sd3: '/data2/home/user/mjlee/CUB_200_ours/CUB_200_50_2_sd3_subsampled_filtered'
+  auraflow: '/data2/home/user/mjlee/CUB_200_ours/CUB_200_50_2_auraflow_subsampled_filtered'
+json_save_path: './RMD_scores/CUB_200_50_2_sdxl_floyd_cogview2_sd3_auraflow.json'

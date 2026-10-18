@@ -1,0 +1,11 @@
+# PACS generated
+
+dataset: 'NICO' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  sdxl: './datasets/neurips/new_generated/NICO/NICO_static_cot_50_sdxl_realistic_subsampled_filtered'
+  dalle2: './datasets/neurips/new_generated/NICO/NICO_static_cot_50_dalle2_realistic_subsampled_filtered'
+  floyd: './datasets/neurips/new_generated/NICO/NICO_static_cot_50_floyd_realistic_subsampled_filtered'
+  cogview2: './datasets/neurips/new_generated/NICO/NICO_static_cot_50_cogview2_realistic_subsampled_filtered'
+
+pickle_save_path: './RMD_scores/NICO_generated.pkl'

@@ -1,0 +1,14 @@
+# dataset: 'cifar10' # PACS, DomainNet, cifar10
+# image_paths:
+#   cifar10_full: './datasets/ablations/cifar10_full'
+#   # cifar10_meta: './datasets/ablations/cifar10_meta'
+#   cifar10_base_1x: './datasets/ablations/cifar10_base_1x_subsampled'
+#   cifar10_ensembled: './datasets/ablations/cifar10_RMD_temp_1'
+  
+# pickle_save_path: './RMD_scores/RMD_scores_cifar10_ablation_equalsize_with_rmd_emsembled.pkl'
+
+dataset: 'PACS' # PACS, DomainNet, cifar10
+use_ma_size: False
+image_paths:
+  PACS_full: './datasets/ablations/pacs_full'
+pickle_save_path: './RMD_scores/PACS_final_normalization_fixed.pkl'

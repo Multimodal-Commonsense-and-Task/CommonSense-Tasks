@@ -1,0 +1,8 @@
+Error generating descriptors for 'sit on motorcycle'
+Error generating descriptors for 'clean toilet'
+Error generating descriptors for 'clean keyboard'
+Error generating descriptors for 'clean dining table'
+Error generating descriptors for 'straddle,pet dog'
+Error generating descriptors for 'clean refrigerator'
+Error generating descriptors for 'ride skateboard'
+Error generating descriptors for 'eat carrot'

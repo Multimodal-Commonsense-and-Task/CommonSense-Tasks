@@ -1,0 +1,22 @@
+dataset: PACS
+image_dir: ./generated_datasets/PACS_auraflow
+generative_model: auraflow
+
+start_class: 0
+end_class: 0
+debug: False
+
+api_key: none # For Dalle2
+
+# prompt_dir: './prompts/clip_filtered_prompts.json'
+prompt_dir: '../prompt_generation/prompts/gpt4_hierarchy_cot_1.json'
+num_samples_path: none # txt file to run conveniently
+
+
+# If you want to manually set the number of samples of each class...
+# increase_ratio: 1.2 # MA * increase_ratio
+# resume_prompt_idx: 1
+num_samples_per_cls: 40 # Fix the number of samples per cls
+# num_samples:
+#   person: 100
+#   horse: 100

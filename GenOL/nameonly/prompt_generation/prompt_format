@@ -1,0 +1,68 @@
+1. Static prompt
+
+{
+    'horse': {
+        'metaprompts': [
+            {
+                'index': 0,
+                'metaprompt': 'Horse galloping through a misty forest at dawn.',
+                'prompts': [
+                    {
+                        'index': 0,
+                        'content': "Horse galloping with full speed in a forest covered in morning mist."
+                    },
+                    {
+                        'index': 1,
+                        'content': "Horse trotting along a snowy trail with pine trees, under a crisp winter sunrise."
+                    }
+                ]
+            },
+            {
+                'index': 1,
+                'metaprompt': "Horse grazing peacefully on a sunny, verdant hillside.",
+                'prompts': [
+                    {
+                        'index': 0,
+                        'content': "Horse trotting along a misty, cobblestone path lined with autumn-colored trees at dusk."
+                    },
+                    {
+                        'index': 1,
+                        'content': "Horse standing near a tranquil lake under the soft light of a full moon."
+                    }
+                ]
+            }
+        ]
+    },
+    'dog': {
+        'metaprompts': [
+            {
+                'index': 0,
+                'metaprompt': 'Horse galloping through a misty forest at dawn.',
+                'prompts': [
+                    {
+                        'index': 0,
+                        'content': "Horse galloping with full speed in a forest covered in morning mist."
+                    },
+                    {
+                        'index': 1,
+                        'content': "Horse trotting along a snowy trail with pine trees, under a crisp winter sunrise."
+                    }
+                ]
+            },
+            {
+                'index': 1,
+                'metaprompt': "Horse grazing peacefully on a sunny, verdant hillside.",
+                'prompts': [
+                    {
+                        'index': 0,
+                        'content': "Horse trotting along a misty, cobblestone path lined with autumn-colored trees at dusk."
+                    },
+                    {
+                        'index': 1,
+                        'content': "Horse standing near a tranquil lake under the soft light of a full moon."
+                    }
+                ]
+            }
+        ]
+    },
+}
