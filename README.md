@@ -88,7 +88,7 @@
 
   * Co-LoRA enables personalized federated learning across clients with different tasks and model architectures through relevance-aware aggregation and dimension-invariant adapters.
 
-* [BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Commands (BINDER)](./BINDER) (ICRA 2026) - Seongwon Cho, Daechul Ahn, Donghyun Shin, Hyeonbeom Choi, San Kim and Jonghyun Choi.
+* BINDER: Instantly Adaptive Mobile Manipulation with Open-Vocabulary Commands (BINDER) (ICRA 2026) - Seongwon Cho, Daechul Ahn, Donghyun Shin, Hyeonbeom Choi, San Kim and Jonghyun Choi.
 
   * BINDER couples deliberative task planning with continuous video-based monitoring so mobile manipulators can react and replan as environments change.
 
