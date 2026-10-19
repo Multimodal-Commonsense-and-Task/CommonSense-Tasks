@@ -1,0 +1,116 @@
+# Copyright (c) Hello Robot, Inc.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the LICENSE file in the root directory
+# of this source tree.
+#
+# Some code may be adapted from other open-source works with their respective licenses. Original
+# license information maybe found below, if so.
+
+import setuptools
+
+__version__ = None
+with open("stretch/version.py") as f:
+    exec(f.read())  # overrides __version__
+
+try:
+    with open("../README.md", "r") as fh:
+        long_description = fh.read()
+except FileNotFoundError:
+    long_description = ""
+
+setuptools.setup(
+    name="stretch_ai",
+    version=__version__,
+    author="Hello Robot Inc.",
+    author_email="support@hello-robot.com",
+    description="Stretch Python API",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/hello-robot/stretchpy",
+    packages=setuptools.find_packages(),
+    include_package_data=True,
+    package_data={"stretch": ["config/**/*.yaml", "perception/*.tsv", "simulation/models/*"]},
+    install_requires=[
+        # Machine learning code
+        "torch<2.4",
+        "torchvision",
+        # General utilities
+        "pyyaml",
+        "pyzmq",
+        "numpy<2",
+        "numba",
+        "opencv-python",
+        "scipy",
+        "matplotlib",
+        "trimesh",
+        "yacs",
+        "scikit-image",
+        "sophuspy",
+        "pin",  # Pinocchio IK solver
+        "pynput",
+        "pyusb",
+        "schema",
+        "overrides",
+        "wget",
+        # From openai
+        "openai",
+        "openai-clip",
+        # For Yolo
+        # "ultralytics",
+        # Hardware dependencies
+        "hello-robot-stretch-urdf",
+        "pyrealsense2",
+        "urchin",
+        # Visualization
+        "rerun-sdk",
+        # For siglip encoder
+        "sentencepiece",
+        # For git tools
+        "gitpython",
+        # Configuration tools and neural networks
+        "hydra-core",
+        "timm",
+        "huggingface_hub[cli]",
+        "transformers",
+        "accelerate",
+        "einops",
+        # Meta neural nets
+        "segment-anything",
+        # Compression tools
+        "pyliblzfse",
+        "webp",
+        # UI tools
+        "termcolor",
+        # Audio (only what the agent import chain needs; TTS engines for the removed
+        # speech action are no longer pulled in)
+        "PyAudio>=0.2.14",  # the version specification is necessary because apt has 0.2.12 which is incompatible with recent numpy
+        "openai-whisper",
+        "overrides",  # better inheritance of docstrings
+        # These are not supported in python 3.12
+        "scikit-fmm",
+        "open3d",
+    ],
+    extras_require={
+        "dev": [
+            "pre-commit",
+            "flake8",
+            "black",
+            "mypy",
+            "lark",
+        ],
+        "discord": [
+            "discord.py",
+            "python-dotenv",
+        ],
+        "sim": [
+            "mujoco",
+            "hello-robot-stretch-urdf",
+            "grpcio",
+        ],
+        "hand_tracker": [
+            "mediapipe",
+            "webcam",
+        ],
+    },
+)

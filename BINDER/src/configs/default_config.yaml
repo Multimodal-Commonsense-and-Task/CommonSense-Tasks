@@ -1,0 +1,98 @@
+# Default configuration for video-robot-agent
+# Copy this to config.yaml and modify as needed
+
+# API Keys and Credentials
+credentials:
+  openai_api_key: ${OPENAI_API_KEY}  # read from environment; export OPENAI_API_KEY before running
+
+# Network Configuration
+network:
+  robot:
+    ip: "*.*.*.*"  # Robot IP address
+    ports:
+      observations: 4401
+      actions: 4402
+      low_level_state: 4403
+      visual_servoing: 4404
+      irm_messages: 4409
+  vlm_server:
+    ip: "localhost"
+    port: 1207
+  manipulation_server:
+    ip: "*.*.*.*"
+    port: 5559
+  rerun:
+    port: 9871
+
+# Model Configuration
+models:
+  sentence_transformer:
+    model_name: "sentence-transformers/all-mpnet-base-v2"
+  drm:
+    model_name: "gpt-4o"
+
+# Robot Configuration
+robot:
+  edition: 3  # Stretch RE3
+  use_d405: true
+  doridori: true
+
+# Task Configuration
+task:
+  enable_irm: true
+  use_mllm: false
+  manipulation_only: false
+  # Natural-language task instruction P given to the DRM. Edit this to set the task.
+  prompt: "Place each object in its receptacle."
+
+# Instance Reasoning Module (IRM) Configuration
+irm:
+  fps: 8
+  num_frames_for_description: 32
+  num_frames_for_irm: 32
+  image_buffer_size: 100
+  ee_image_buffer_size: 100
+  capture_interval: 0.125  # 1/fps
+
+# Exploration Configuration
+navigation:
+  edge_margin: 0.3
+  obstacle_margin: 3
+  close_threshold: 0.7
+  distance_robot_to_nearest_threshold: 0.8
+
+exploration:
+  num_exploration_points: 3
+  frontier_margin_m: 0.5
+  time_smooth: 0.1
+  time_threshold: 50
+  alignment_smooth: 15  # Sigmoid smoothing factor for alignment heuristic
+  alignment_threshold: 0.13  # Threshold for alignment sigmoid
+  obstacle_margin: 3
+  close_threshold: 0.7
+  grid_to_xy_resolution: 0.1  # Grid resolution in meters
+  min_distance_from_other_points: 2.0  # Minimum distance between exploration points (meters)
+  min_distance_from_robot: 0.5  # Minimum distance from robot position (meters)
+
+# Logging Configuration
+logging:
+  base_dir: "log"
+  timezone: "Asia/Seoul"
+  log_level: "INFO"
+  save_images: true
+  save_pickle: true
+  verbose: true
+
+# Visualization
+visualization:
+  use_rerun: true
+  save_rerun_recordings: false
+  show_exploration_heuristics: false
+  show_navigation_space: true
+
+# Development/Debug Settings
+debug:
+  save_navigation_spaces: true
+  save_localization_results: true
+  use_cached_owl_model: true
+  profile_performance: false

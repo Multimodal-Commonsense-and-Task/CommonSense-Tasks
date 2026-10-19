@@ -1,0 +1,49 @@
+# Unified GPU image: runs BOTH the IRM Video-LLM server (vLLM/Qwen2.5-VL) AND the full
+# agent stack, in one environment. Feasible because vLLM tolerates numpy<2
+# (verified: no ABI break), so the agent's open3d/rerun/numba (numpy<2) coexist with it.
+#
+# One big (~12GB) GPU/vLLM image, always GPU-heavy to build. IRM is normally a separate
+# ZMQ service, so in production you may prefer to split it out; this is the
+# "one image for everything" option.
+#
+# Run (IRM server):   docker run --gpus '"device=1"' --shm-size=8g ... -w /app/irm  python main.py
+# Run (agent):        docker run ...                                  -w /app/src  python main_multiple_objects.py
+FROM python:3.10-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    HF_HOME=/models/hf \
+    NLTK_DATA=/usr/share/nltk_data \
+    PYTHONPATH=/app/irm:/app/src \
+    # Use vLLM's native sampler instead of flashinfer: on Blackwell (sm_120) flashinfer
+    # would JIT-compile kernels at runtime (needs a full CUDA toolkit). Native sampler
+    # avoids that, so the same image runs on Blackwell and older GPUs without nvcc.
+    VLLM_USE_FLASHINFER_SAMPLER=0
+
+# 1) System libs.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        git build-essential libgl1 libglib2.0-0 ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# 2) vLLM — 0.23.0 brings torch 2.11.0 (CUDA 12.8+) with kernels AND a Qwen2.5-VL vision
+#    attention path that work on Blackwell (sm_120) as well as Volta..Hopper. Needs a host
+#    driver new enough for the bundled CUDA (this host: driver 580 / CUDA 13).
+RUN pip install -U pip && pip install vllm==0.23.0
+
+# 3) Agent stack + IRM extras together. This pins numpy<2 (downgrades vLLM's numpy 2.2 to
+#    1.26.4) and opencv 4.10, and bumps transformers to 4.51.3 — one consistent env.
+# setuptools 81 dropped bundled pkg_resources, breaking legacy sdists (openai-whisper)
+# under PEP-517 isolation; constrain the build-time setuptools so those builds succeed.
+RUN printf 'setuptools<81\nwheel\n' > /tmp/build-constraints.txt
+ENV PIP_CONSTRAINT=/tmp/build-constraints.txt
+COPY docker/requirements-all.txt /tmp/requirements-all.txt
+COPY docker/requirements-tail.txt /tmp/requirements-tail.txt
+RUN pip install -r /tmp/requirements-all.txt
+RUN pip install --no-deps -r /tmp/requirements-tail.txt
+
+# 4) NLTK corpora used by src/utils.py
+RUN python -m nltk.downloader -d $NLTK_DATA wordnet omw-1.4 punkt punkt_tab
+
+WORKDIR /app
+CMD ["bash"]

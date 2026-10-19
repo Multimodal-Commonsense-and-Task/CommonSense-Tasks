@@ -1,0 +1,4 @@
+# Small leaf packages discovered last in the stretch import chain. Kept in a separate
+# layer (installed --no-deps) so appending here does NOT rebuild the heavy deps layer.
+rdppy==0.0.2
+wget==3.2

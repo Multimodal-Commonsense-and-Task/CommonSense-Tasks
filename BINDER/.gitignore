@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.egg-info/
+log/
+irm_log/
+dynamem_log/
+grasping_result/
+src/configs/config.yaml
