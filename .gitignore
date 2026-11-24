@@ -17,6 +17,12 @@
 /DART/third_party/aloha/aloha2/workcell_v2/Aloha workcell v2.stl
 /DART/third_party/libero/libero/libero/assets/
 /DART/third_party/libero-view/libero/libero/assets/
+/ProCoRe/.git-upstream/
+/ProCoRe/datalists/
+/ProCoRe/MTV/storage/
+/ProCoRe/MTV/storage_json/
+/ProCoRe/MTV/origin_data/
+/ProCoRe/MTV/existing_benchmark_json/
 
 # Python bytecode and interpreter caches.
 __pycache__/

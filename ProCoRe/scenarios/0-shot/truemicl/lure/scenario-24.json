@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "sudoku",
+                "subset_id": "from_internvl3_5-8b_scen6_0shot"
+            }
+        ],
+        "type": "multi-choice",
+        "item": "accuracy"
+    }
+]

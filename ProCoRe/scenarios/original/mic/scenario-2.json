@@ -1,0 +1,8 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "mic","subset_id": "2_split", "type":"open-ended", "metric":"rouge"}
+        ] 
+    }
+]

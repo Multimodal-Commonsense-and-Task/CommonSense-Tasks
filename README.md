@@ -46,7 +46,7 @@
 
   * Budgeted-CL compares continual-learning methods under explicit compute and memory budgets, then saves resources through adaptive layer freezing and frequency-based replay sampling.
 
-* Moment-Aware Video Retrieval for Video Corpus Moment Retrieval (IEEE Access 2025) - Yura Choi, Daechul Ahn and Jonghyun Choi.
+* [Moment-Aware Video Retrieval for Video Corpus Moment Retrieval](./MA-VR) (IEEE Access 2025; independent reimplementation) - Yura Choi, Daechul Ahn and Jonghyun Choi.
 
   * This work jointly connects video retrieval and moment retrieval and uses curriculum-based negative sampling for finer temporal query-video alignment.
 
@@ -62,7 +62,7 @@
 
   * HIMA combines specialized imitation-learning agents with a strategic planner to produce adaptive long-horizon plans in real-time strategy environments.
 
-* Online Generic Event Boundary Detection (ESTimator) (ICCV 2025) - Hyungrok Jung, Daneul Kim, Seunggyun Lim, Jeany Son and Jonghyun Choi.
+* [Online Generic Event Boundary Detection (ESTimator)](./ESTimator) (ICCV 2025; independent reimplementation) - Hyungrok Jung, Daneul Kim, Seunggyun Lim, Jeany Son and Jonghyun Choi.
 
   * ESTimator detects generic event boundaries in streaming video by anticipating future frames and identifying statistically meaningful prediction errors online.
 
@@ -72,7 +72,7 @@
 
 ### 2026
 
-* An Information Theoretic Evaluation Metric for Strong Unlearning (IDI) (AAAI 2026) - Dongjae Jeon, Wonje Jeung, Taeheon Kim, Albert No and Jonghyun Choi.
+* [An Information Theoretic Evaluation Metric for Strong Unlearning (IDI/COLA)](./IDI) (AAAI 2026; independent reimplementation) - Dongjae Jeon, Wonje Jeung, Taeheon Kim, Albert No and Jonghyun Choi.
 
   * The Information Difference Index evaluates strong machine unlearning by measuring how much label information remains in a model's intermediate representations.
 
@@ -115,3 +115,7 @@
 * SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models (SCALE) (ICML 2026) - Hyunbeom Choi, Daechul Ahn, Youhan Lee, Taewook Kang, Seongwon Cho and Jonghyun Choi.
 
   * SCALE uses a vision-language-action model's own uncertainty to adapt both visual perception and action decoding in a single inference pass.
+
+* [Visual Grounding First, Multimodal In-context Learning Follows (ProCoRe)](./ProCoRe) (NeurIPS 2026) - Minhyuk Seo, Minjae Lee, Chaeeun Lee, Wei Lin, Muhammad Jehanzeb Mirza, Tinne Tuytelaars and Jonghyun Choi.
+
+  * ProCoRe strengthens visual grounding with proposition-based contrastive reinforcement learning, improving multimodal in-context learning without training on ICL-formatted examples.

@@ -1,0 +1,31 @@
+[
+  {
+    "client_id": 0,
+    "datasets": [
+      {
+        "dataset": "clevr",
+        "subset_id": "10_mmices_asc",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "textocr",
+        "subset_id": "10_mmices_asc",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "operator_induction",
+        "subset_id": "10_mmices_asc",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "operator_induction_interleaved",
+        "subset_id": "10_mmices_asc",
+        "type": "exact-match",
+        "item": "accuracy"
+      }
+    ]
+  }
+]

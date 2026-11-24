@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "iconqa",
+                "subset_id": "from_qwen3-8b_scen6_2shot"
+            }
+        ],
+        "type": "open-ended",
+        "item": "ROUGE-L"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "coco","subset_id": 12, "type":"open-ended", "metric":"rouge"}
+        ] 
+    }
+]

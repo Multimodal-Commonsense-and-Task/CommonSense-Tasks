@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "classification",
+                "subset_id": "from_qwen3-8b_scen1_2shot"
+            }
+        ],
+        "type": "exact-match",
+        "item": "accuracy"
+    }
+]

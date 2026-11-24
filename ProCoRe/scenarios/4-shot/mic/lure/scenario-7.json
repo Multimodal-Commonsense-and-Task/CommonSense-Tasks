@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "okvqa",
+                "subset_id": "from_idefics-8b_scen7_4shot"
+            }
+        ],
+        "type": "open-ended",
+        "item": "ROUGE-L"
+    }
+]

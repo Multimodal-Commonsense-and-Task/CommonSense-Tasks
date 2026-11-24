@@ -1,0 +1,1 @@
+[{"client_id": 0, "datasets": [{"dataset": "vliclv2/clevr", "subset_id": "8_multimodal", "type": "exact-match", "item": "accuracy"}]}]

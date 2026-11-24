@@ -1,0 +1,49 @@
+[
+  {
+    "client_id": 0,
+    "datasets": [
+      {
+        "dataset": "classification",
+        "subset_id": "2_truemicl_textsim_des",
+        "type": "multi-choice",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "clevr",
+        "subset_id": "2_truemicl_textsim_des",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "operator_induction",
+        "subset_id": "2_truemicl_textsim_des",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "palindrome_dataset",
+        "subset_id": "2_textsim_des",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "shapes_count",
+        "subset_id": "2_textsim_des",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "sudoku",
+        "subset_id": "2_textsim_des",
+        "type": "exact-match",
+        "item": "accuracy"
+      },
+      {
+        "dataset": "clock",
+        "subset_id": "2_textsim_des",
+        "type": "exact-match",
+        "item": "RougeL"
+      }
+    ]
+  }
+]

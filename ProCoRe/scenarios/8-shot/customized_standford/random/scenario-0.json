@@ -1,0 +1,13 @@
+[
+  {
+    "client_id": 0,
+    "datasets": [
+      {
+        "dataset": "customized_standford",
+        "subset_id": 18,
+        "type": "multi-choice",
+        "item": "accuracy"
+      }
+    ]
+  }
+]

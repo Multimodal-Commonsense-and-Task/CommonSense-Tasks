@@ -1,0 +1,11 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "Bongard-HOI","subset_id": 50, "type":"multi-choice"},
+            {"dataset": "NLVR2","subset_id": 0, "type":"multi-choice"},
+            {"dataset": "Co-Instruct-DB","subset_id": 0, "type":"multi-choice"},
+            {"dataset": "TQA","subset_id": 0, "type":"multi-choice"}
+        ] 
+    }
+]

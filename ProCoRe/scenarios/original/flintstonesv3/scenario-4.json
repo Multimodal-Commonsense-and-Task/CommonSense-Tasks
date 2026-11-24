@@ -1,0 +1,8 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "flintstonesv3","subset_id": "4", "type":"open-ended", "metric":"RougeL"}
+        ] 
+    }
+]

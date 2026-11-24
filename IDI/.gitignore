@@ -1,0 +1,11 @@
+data/
+outputs/
+checkpoints/
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.npy
+*.npz
+.venv/
+.env

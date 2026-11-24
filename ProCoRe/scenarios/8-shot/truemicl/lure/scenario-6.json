@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "clevr",
+                "subset_id": "from_qwen3-8b_scen2_8shot"
+            }
+        ],
+        "type": "multi-choice",
+        "item": "accuracy"
+    }
+]

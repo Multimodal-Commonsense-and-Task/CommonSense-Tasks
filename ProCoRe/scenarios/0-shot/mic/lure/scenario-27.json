@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "textvqa",
+                "subset_id": "from_qwen3-8b_scen9_0shot"
+            }
+        ],
+        "type": "open-ended",
+        "item": "ROUGE-L"
+    }
+]

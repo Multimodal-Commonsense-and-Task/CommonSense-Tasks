@@ -1,0 +1,15 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "ScienceQA","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "TextVQA","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "ImageNet","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "GQA","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "VizWiz","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "Grounding","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "VQAv2","subset_id": 4, "type":"multi-choice"},
+            {"dataset": "OCR-VQA","subset_id": 4, "type":"multi-choice"}
+        ]
+    }
+]

@@ -21,4 +21,8 @@ This repository keeps paper implementations and lightweight configuration files 
 - `DART/third_party/aloha/aloha2/workcell_v2/Aloha workcell v2.stl` — 3D CAD asset (about 93 MB)
 - `DART/third_party/libero/libero/libero/assets/` and `DART/third_party/libero-view/libero/libero/assets/` — duplicated LIBERO simulation assets (about 416 MB each)
 
+- `ProCoRe/datalists/` — evaluation and training data lists (about 1.68 GB in the upstream tree)
+- `ProCoRe/MTV/storage/` — precomputed model-task-vector activations (about 102 MB)
+- `ProCoRe/MTV/{storage_json,origin_data,existing_benchmark_json}/` — generated results and benchmark data (about 10 MB)
+
 See the upstream repository READMEs for dataset, checkpoint, and asset download instructions.

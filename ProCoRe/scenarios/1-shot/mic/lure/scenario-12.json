@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "miniimage",
+                "subset_id": "from_internvl3_5-8b_scen3_1shot"
+            }
+        ],
+        "type": "open-ended",
+        "item": "ROUGE-L"
+    }
+]

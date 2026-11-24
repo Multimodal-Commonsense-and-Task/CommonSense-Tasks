@@ -1,0 +1,8 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "vqa","subset_id": 13, "type":"open-ended", "metric":"rouge"}
+        ] 
+    }
+]

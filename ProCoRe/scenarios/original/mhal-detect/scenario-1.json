@@ -1,0 +1,8 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "mhal-detect","subset_id": 1, "type":"open-ended", "metric":"RougeL"}
+        ] 
+    }
+]

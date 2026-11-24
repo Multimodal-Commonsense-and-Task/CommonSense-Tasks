@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "pororov3",
+                "subset_id": "from_onevision1_5-8b_scen1_1shot"
+            }
+        ],
+        "type": "open-ended",
+        "item": "ROUGE-L"
+    }
+]

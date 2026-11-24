@@ -1,0 +1,2 @@
+[{"client_id": 0, "datasets": [{"dataset": "coco", "subset_id": 0, "type": "open-ended", "item": "RougeL"}],
+"model_id": "thkim0305/llama3.2_1B_vl"}]

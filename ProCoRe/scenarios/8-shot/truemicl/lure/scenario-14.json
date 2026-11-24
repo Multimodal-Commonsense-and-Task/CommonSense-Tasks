@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "clock",
+                "subset_id": "from_onevision1_5-8b_scen7_8shot"
+            }
+        ],
+        "type": "multi-choice",
+        "item": "accuracy"
+    }
+]

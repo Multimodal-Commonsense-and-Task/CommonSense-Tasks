@@ -1,0 +1,13 @@
+[
+  {
+    "client_id": 0,
+    "datasets": [
+      {
+        "dataset": "stanford10000_+1",
+        "subset_id": 20,
+        "type": "multi-choice",
+        "item": "accuracy"
+      }
+    ]
+  }
+]

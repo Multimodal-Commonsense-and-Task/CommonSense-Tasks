@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "clock",
+                "subset_id": "from_idefics-8b_scen7_0shot"
+            }
+        ],
+        "type": "multi-choice",
+        "item": "accuracy"
+    }
+]

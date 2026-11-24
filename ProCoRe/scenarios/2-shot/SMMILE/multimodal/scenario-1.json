@@ -1,0 +1,1 @@
+[{"client_id": 0, "datasets": [{"dataset": "SMMILE", "subset_id": "2_openended_multimodal", "type": "llm-as-judge", "item": "accuracy"}]}]

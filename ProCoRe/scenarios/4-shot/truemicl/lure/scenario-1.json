@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "classification",
+                "subset_id": "from_idefics-8b_scen1_4shot"
+            }
+        ],
+        "type": "exact-match",
+        "item": "accuracy"
+    }
+]

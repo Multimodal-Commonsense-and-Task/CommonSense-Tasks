@@ -1,0 +1,13 @@
+[
+    {
+        "client_id": 0,
+        "datasets": [
+            {
+                "dataset": "shapescount",
+                "subset_id": "from_internvl3_5-8b_scen5_1shot"
+            }
+        ],
+        "type": "multi-choice",
+        "item": "accuracy"
+    }
+]

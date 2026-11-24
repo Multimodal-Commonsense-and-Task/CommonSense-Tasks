@@ -1,0 +1,11 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "NLVR2","subset_id": 0, "type":"multi-choice"},
+            {"dataset": "Bongard-HOI","subset_id": 50, "type":"multi-choice"},
+            {"dataset": "HQ_Edit","subset_id": 0, "type":"multi-choice"},
+            {"dataset": "PatternCom","subset_id": 0, "type":"multi-choice"}
+        ] 
+    }
+]

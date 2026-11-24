@@ -1,0 +1,8 @@
+[
+    {
+        "client_id": 0,
+        "datasets":[
+            {"dataset": "truemicl","subset_id": "mixed", "type":"open-ended", "metric":"RougeL"}
+        ] 
+    }
+]
